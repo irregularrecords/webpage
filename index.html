@@ -5,81 +5,148 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IRREGULAR RECORDS</title>
     <style>
-        /* Estilos para el body (fondo de la página) */
-        body {
+        /* Estilos generales */
+        body, html {
             margin: 0;
             padding: 0;
-            height: 100vh;
+            font-family: Arial, sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        /* Sección 1: Header con fondo blanco y logo */
+        .seccion-header {
+            height: 16.665vh; /* Mitad de 33.33vh */
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .seccion-header img {
+            height: 80%; /* Altura del logo basada en la altura de la sección */
+            width: auto; /* Mantiene la proporción del logo */
+            max-height: 150px; /* Limita el tamaño máximo del logo */
+        }
+
+        /* Sección 2: Fondo con imagen y dos bloques */
+        .seccion-sello {
+            height: 50vh; /* Mitad de 100vh */
             background-image: url('background.png');
             background-size: cover;
             background-position: center;
             display: flex;
-            justify-content: center;
+            justify-content: space-between;
             align-items: center;
             position: relative;
         }
 
-        /* Capa de color violeta con transparencia */
-        body::before {
+        /* Bloque violeta con 90% de transparencia */
+        .seccion-sello::before {
             content: '';
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            background-color: rgba(44, 38, 99, 0.90);
+            background-color: rgba(120, 0, 90, 0.9);
         }
 
-        /* Contenedor para el logo y el texto */
-        .contenedor {
-            background-color: #2c2663; /* Violeta sólido */
-            padding: 40px; /* Espacio interno */
-            border-radius: 10px; /* Bordes redondeados */
-            text-align: center; /* Centrar contenido */
-            position: relative; /* Asegura que esté por encima del overlay */
-            z-index: 1; /* Coloca el contenedor por encima del overlay */
-            max-width: 800px; /* Ancho máximo del contenedor */
-            width: 90%; /* Ancho relativo para dispositivos pequeños */
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Sombra para dar profundidad */
+        /* Bloque izquierdo: Texto y logos de redes */
+        .bloque-izquierdo {
+            width: 50%;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+            padding: 20px;
         }
 
-        /* Estilos para la imagen centrada */
-        .logo {
-            width: 100%; /* Ocupa el 100% del ancho del contenedor */
-            height: auto; /* Mantiene la proporción de la imagen */
-            margin-bottom: 20px; /* Espacio entre el logo y el texto */
+        .bloque-izquierdo h1 {
+            color: white;
+            font-size: 48px;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-bottom: 20px;
         }
 
-        /* Estilos para el texto */
-        .texto {
-            color: #ff66cc; /* Color rosa */
-            font-family: Arial, sans-serif; /* Fuente sans-serif común */
-            text-align: justify; /* Texto justificado */
-            line-height: 1.6; /* Espaciado entre líneas */
-            font-size: 16px; /* Tamaño de fuente */
+        .bloque-izquierdo .redes-sociales {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
         }
 
-        /* Separación entre párrafos */
-        .texto p {
-            margin-bottom: 20px; /* Espacio entre párrafos */
+        .bloque-izquierdo .redes-sociales img {
+            width: 40px;
+            height: auto;
+        }
+
+        /* Bloque derecho: Google Maps */
+        .bloque-derecho {
+            width: 50%;
+            height: 100%;
+            position: relative;
+            z-index: 1;
+        }
+
+        .bloque-derecho iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        /* Sección 3: Texto violeta */
+        .seccion-proyecto {
+            background-color: white;
+            color: rgba(120, 0, 90);
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .seccion-proyecto p {
+            font-size: 18px;
+            line-height: 1.8;
+            margin: 0 auto;
+            max-width: 800px;
         }
     </style>
 </head>
 <body>
-    <!-- Contenedor para el logo y el texto -->
-    <div class="contenedor">
-        <!-- Imagen centrada -->
-        <img src="logo.png" alt="Logo" class="logo">
+    <!-- Sección 1: Header con logo sobre fondo blanco -->
+    <header class="seccion-header">
+        <img src="logo.png" alt="Logo">
+    </header>
 
-        <!-- Texto debajo del logo -->
-        <div class="texto">
-            <p>
-                Somos un proyecto joven y apasionado, dedicado a lo que más nos gusta: la música. Nos mueve la búsqueda de rarezas, discos poco vistos y esas gemas perdidas que merecen un lugar especial. Amamos el formato físico, ese que se puede tocar, oler, disfrutar con cada detalle, porque creemos que es una forma única de vivir la música. Pero, sobre todo, nos encanta acercar estas maravillas a la gente, compartirlas, difundirlas y ponerlas en el pedestal que creemos que merecen.
-            </p>
-            <p>
-                Con ese mismo ímpetu, nos animamos a dar un paso más y lanzar nuestro propio sello discográfico de vinilos, un espacio donde podamos seguir rescatando y difundiendo música que vale la pena escuchar. Esto recién empieza, y estamos listos para compartir este viaje con ustedes.
-            </p>
+    <!-- Sección 2: Fondo con imagen y dos bloques -->
+    <section class="seccion-sello">
+        <!-- Bloque izquierdo: Texto y logos de redes -->
+        <div class="bloque-izquierdo">
+            <h1>LA DISQUERÍA</h1>
+            <div class="redes-sociales">
+                <a href="https://www.instagram.com/irregular.records" target="_blank">
+                    <img src="ico_in.png" alt="Instagram">
+                </a>
+                <a href="https://www.facebook.com/irregular.records" target="_blank">
+                    <img src="ico_fb.png" alt="Facebook">
+                </a>
+                <a href="http://wa.me/5492216009723" target="_blank">
+                    <img src="ico_wa.png" alt="WhatsApp">
+                </a>
+            </div>
         </div>
-    </div>
+
+        <!-- Bloque derecho: Google Maps -->
+        <div class="bloque-derecho">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d628.4079264794801!2d-57.9563981!3d-34.906911!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2e7a7660ab945%3A0x797c4c826d7348bc!2sIrregular%20Records!5e1!3m2!1ses-419!2sar!4v1742306706748!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+
+    <!-- Sección 3: Texto violeta -->
+    <section class="seccion-proyecto">
+        <p>
+            Somos un proyecto joven y apasionado, dedicado a lo que más nos gusta: la música. Nos mueve la búsqueda de rarezas, discos poco vistos y esas gemas perdidas que merecen un lugar especial. Pero, sobre todo, nos encanta acercar estas maravillas a la gente, compartirlas, difundirlas y ponerlas en el pedestal que creemos que merecen.
+        </p>
+        <p>
+            Con esa misma energía, nos animamos a dar un paso más y lanzar nuestro propio sello discográfico, un espacio donde podamos seguir rescatando y difundiendo música que vale la pena escuchar. Esto recién empieza, y estamos listos para compartir este viaje con ustedes.
+        </p>
+    </section>
 </body>
 </html>
