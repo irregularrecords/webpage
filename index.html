@@ -101,7 +101,7 @@
             padding: 20px;
         }
 
-        /* Bloque izquierdo: Texto (segundo párrafo) */
+        /* Bloque izquierdo: Título y segundo párrafo */
         .bloque-izquierdo-sello {
             width: 50%;
             text-align: justify;
@@ -111,18 +111,18 @@
             padding: 20px;
         }
 
-        /* Bloque derecho: Imagen del sello */
-        .bloque-derecho-sello {
-            width: 50%;
-            text-align: center;
-        }
-
-        .bloque-derecho-sello h1 {
-            color: rgba(80, 0, 120);
+        .bloque-izquierdo-sello h1 {
             font-size: 48px;
             font-weight: bold;
             text-transform: uppercase;
             margin-bottom: 20px;
+            text-align: center; /* Centrar el título */
+        }
+
+        /* Bloque derecho: Imagen del sello */
+        .bloque-derecho-sello {
+            width: 50%;
+            text-align: center;
         }
 
         .bloque-derecho-sello img {
@@ -165,16 +165,16 @@
 
     <!-- Sección 3: Nuestro Sello -->
     <section class="seccion-sello">
-        <!-- Bloque izquierdo: Segundo párrafo del texto -->
+        <!-- Bloque izquierdo: Título y segundo párrafo -->
         <div class="bloque-izquierdo-sello">
-           <p>
+            <h1>NUESTRO SELLO</h1>
+            <p>
                 Con ese mismo ímpetu, decidimos dar un paso adelante y aventurarnos a lanzar nuestro propio sello discográfico, un espacio donde podamos seguir rescatando y difundiendo música que vale la pena escuchar. Esto recién empieza, y estamos listos para compartir este viaje con ustedes.
             </p>
         </div>
 
         <!-- Bloque derecho: Imagen del sello -->
         <div class="bloque-derecho-sello">
-            <h1>NUESTRO SELLO</h1>
             <img src="sello.png" alt="Sello">
         </div>
     </section>
