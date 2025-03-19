@@ -51,36 +51,8 @@
             background-color: rgba(80, 0, 120, 0.9);
         }
 
-        /* Bloque izquierdo: Texto y logos de redes */
+        /* Bloque izquierdo: Texto (primer párrafo) */
         .bloque-izquierdo {
-            width: 50%;
-            text-align: center;
-            position: relative;
-            z-index: 1;
-            padding: 20px;
-        }
-
-        .bloque-izquierdo h1 {
-            color: white;
-            font-size: 48px;
-            font-weight: bold;
-            text-transform: uppercase;
-            margin-bottom: 20px;
-        }
-
-        .bloque-izquierdo .redes-sociales {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-        }
-
-        .bloque-izquierdo .redes-sociales img {
-            width: 40px;
-            height: auto;
-        }
-
-        /* Bloque derecho: Texto (primer párrafo) */
-        .bloque-derecho {
             width: 50%;
             text-align: center;
             position: relative;
@@ -89,6 +61,34 @@
             color: white;
             font-size: 18px;
             line-height: 1.8;
+        }
+
+        /* Bloque derecho: Texto y logos de redes */
+        .bloque-derecho {
+            width: 50%;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+            padding: 20px;
+        }
+
+        .bloque-derecho h1 {
+            color: white;
+            font-size: 48px;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+
+        .bloque-derecho .redes-sociales {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .bloque-derecho .redes-sociales img {
+            width: 40px;
+            height: auto;
         }
 
         /* Sección 3: Nuestro Sello */
@@ -139,8 +139,15 @@
 
     <!-- Sección 2: Nuestra Tienda -->
     <section class="seccion-tienda">
-        <!-- Bloque izquierdo: Texto y logos de redes -->
+        <!-- Bloque izquierdo: Primer párrafo del texto -->
         <div class="bloque-izquierdo">
+            <p>
+                Somos un proyecto joven y apasionado, dedicado a lo que más nos gusta: la música. Nos mueve la búsqueda de esas gemas olvidadas para darles un nuevo hogar. Lo que más disfrutamos es compartirlas con quienes aman el formato físico, ese que se puede tocar, oler, disfrutar en cada detalle, porque creemos que es una forma única de vivir la música.
+            </p>
+        </div>
+
+        <!-- Bloque derecho: Texto y logos de redes -->
+        <div class="bloque-derecho">
             <h1>NUESTRA TIENDA</h1>
             <div class="redes-sociales">
                 <a href="https://www.instagram.com/irregular.records" target="_blank">
@@ -153,13 +160,6 @@
                     <img src="ico_wa.png" alt="WhatsApp">
                 </a>
             </div>
-        </div>
-
-        <!-- Bloque derecho: Primer párrafo del texto -->
-        <div class="bloque-derecho">
-            <p>
-                Somos un proyecto joven y apasionado, dedicado a lo que más nos gusta: la música. Nos mueve la búsqueda de esas gemas olvidadas para darles un nuevo hogar. Lo que más disfrutamos es compartirlas con quienes aman el formato físico, ese que se puede tocar, oler, disfrutar en cada detalle, porque creemos que es una forma única de vivir la música.
-            </p>
         </div>
     </section>
 
