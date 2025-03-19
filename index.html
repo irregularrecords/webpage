@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IRREGULAR RECORDS</title>
     <style>
+        /* Cargar la fuente FugazOne-Regular */
+        @font-face {
+            font-family: 'FugazOne';
+            src: url('fonts/FugazOne-Regular.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
         /* Estilos generales */
         body, html {
             margin: 0;
@@ -40,18 +48,7 @@
             position: relative;
         }
 
-        /* Bloque violeta con 90% de transparencia */
-        .seccion-tienda::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(80, 0, 120, 0.9);
-        }
-
-        /* Bloque izquierdo: Texto (primer párrafo) */
+        /* Bloque izquierdo: Texto (primer párrafo) con fondo violeta */
         .bloque-izquierdo {
             width: 50%;
             text-align: center;
@@ -61,6 +58,7 @@
             color: white;
             font-size: 18px;
             line-height: 1.8;
+            background-color: rgba(80, 0, 120, 0.9); /* Fondo violeta con 90% de transparencia */
         }
 
         /* Bloque derecho: Texto y logos de redes */
@@ -78,6 +76,7 @@
             font-weight: bold;
             text-transform: uppercase;
             margin-bottom: 20px;
+            font-family: 'FugazOne', sans-serif; /* Aplicar la fuente FugazOne */
         }
 
         .bloque-derecho .redes-sociales {
@@ -117,6 +116,7 @@
             text-transform: uppercase;
             margin-bottom: 20px;
             text-align: center; /* Centrar el título */
+            font-family: 'FugazOne', sans-serif; /* Aplicar la fuente FugazOne */
         }
 
         /* Bloque derecho: Imagen del sello */
@@ -139,7 +139,7 @@
 
     <!-- Sección 2: Nuestra Tienda -->
     <section class="seccion-tienda">
-        <!-- Bloque izquierdo: Primer párrafo del texto -->
+        <!-- Bloque izquierdo: Primer párrafo del texto con fondo violeta -->
         <div class="bloque-izquierdo">
             <p>
                 Somos un proyecto joven y apasionado, dedicado a lo que más nos gusta: la música. Nos mueve la búsqueda de esas gemas olvidadas para darles un nuevo hogar. Lo que más disfrutamos es compartirlas con quienes aman el formato físico, ese que se puede tocar, oler, disfrutar en cada detalle, porque creemos que es una forma única de vivir la música.
