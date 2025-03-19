@@ -29,7 +29,7 @@
         }
 
         /* Sección 2: Fondo con imagen y dos bloques */
-        .seccion-sello {
+        .seccion-tienda {
             height: 50vh; /* Mitad de 100vh */
             background-image: url('background.png');
             background-size: cover;
@@ -41,7 +41,7 @@
         }
 
         /* Bloque violeta con 90% de transparencia */
-        .seccion-sello::before {
+        .seccion-tienda::before {
             content: '';
             position: absolute;
             top: 0;
@@ -79,33 +79,55 @@
             height: auto;
         }
 
-        /* Bloque derecho: Google Maps */
+        /* Bloque derecho: Texto (primer párrafo) */
         .bloque-derecho {
             width: 50%;
-            height: 100%;
+            text-align: center;
             position: relative;
             z-index: 1;
-        }
-
-        .bloque-derecho iframe {
-            width: 100%;
-            height: 100%;
-            border: none;
-        }
-
-        /* Sección 3: Texto violeta */
-        .seccion-proyecto {
-            background-color: white;
-            color: rgba(80, 0, 120);
-            text-align: center;
-            padding: 40px 20px;
-        }
-
-        .seccion-proyecto p {
+            padding: 20px;
+            color: white;
             font-size: 18px;
             line-height: 1.8;
-            margin: 0 auto;
-            max-width: 800px;
+        }
+
+        /* Sección 3: Nuestro Sello */
+        .seccion-sello {
+            height: 50vh; /* Mitad de 100vh */
+            background-color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+
+        /* Bloque izquierdo: Texto (segundo párrafo) */
+        .bloque-izquierdo-sello {
+            width: 50%;
+            text-align: justify;
+            color: rgba(80, 0, 120);
+            font-size: 18px;
+            line-height: 1.8;
+            padding: 20px;
+        }
+
+        /* Bloque derecho: Imagen del sello */
+        .bloque-derecho-sello {
+            width: 50%;
+            text-align: center;
+        }
+
+        .bloque-derecho-sello h1 {
+            color: rgba(80, 0, 120);
+            font-size: 48px;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+
+        .bloque-derecho-sello img {
+            max-width: 100%;
+            height: auto;
         }
     </style>
 </head>
@@ -115,11 +137,11 @@
         <img src="logo.png" alt="Logo">
     </header>
 
-    <!-- Sección 2: Fondo con imagen y dos bloques -->
-    <section class="seccion-sello">
+    <!-- Sección 2: Nuestra Tienda -->
+    <section class="seccion-tienda">
         <!-- Bloque izquierdo: Texto y logos de redes -->
         <div class="bloque-izquierdo">
-            <h1>LA TIENDA</h1>
+            <h1>NUESTRA TIENDA</h1>
             <div class="redes-sociales">
                 <a href="https://www.instagram.com/irregular.records" target="_blank">
                     <img src="ico_ig.png" alt="Instagram">
@@ -133,20 +155,28 @@
             </div>
         </div>
 
-        <!-- Bloque derecho: Google Maps -->
+        <!-- Bloque derecho: Primer párrafo del texto -->
         <div class="bloque-derecho">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d628.4079264794801!2d-57.9563981!3d-34.906911!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2e7a7660ab945%3A0x797c4c826d7348bc!2sIrregular%20Records!5e1!3m2!1ses-419!2sar!4v1742306706748!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <p>
+                Somos un proyecto joven y apasionado, dedicado a lo que más nos gusta: la música. Nos mueve la búsqueda de rarezas, discos poco vistos y esas gemas perdidas que merecen un lugar especial. Pero, sobre todo, nos encanta acercar estas maravillas a la gente, compartirlas, difundirlas y ponerlas en el pedestal que creemos que merecen.
+            </p>
         </div>
     </section>
 
-    <!-- Sección 3: Texto violeta -->
-    <section class="seccion-proyecto">
-        <p>
-            Somos un proyecto joven y apasionado, dedicado a lo que más nos gusta: la música. Nos mueve la búsqueda de rarezas, discos poco vistos y esas gemas perdidas que merecen un lugar especial. Pero, sobre todo, nos encanta acercar estas maravillas a la gente, compartirlas, difundirlas y ponerlas en el pedestal que creemos que merecen.
-        </p>
-        <p>
-            Con ese mismo ímpetu, nos animamos a dar un paso más y lanzar nuestro propio sello discográfico, un espacio donde podamos seguir rescatando y difundiendo música que vale la pena escuchar. Esto recién empieza, y estamos listos para compartir este viaje con ustedes.
-        </p>
+    <!-- Sección 3: Nuestro Sello -->
+    <section class="seccion-sello">
+        <!-- Bloque izquierdo: Segundo párrafo del texto -->
+        <div class="bloque-izquierdo-sello">
+            <p>
+                Con ese mismo ímpetu, nos animamos a dar un paso más y lanzar nuestro propio sello discográfico, un espacio donde podamos seguir rescatando y difundiendo música que vale la pena escuchar. Esto recién empieza, y estamos listos para compartir este viaje con ustedes.
+            </p>
+        </div>
+
+        <!-- Bloque derecho: Imagen del sello -->
+        <div class="bloque-derecho-sello">
+            <h1>NUESTRO SELLO</h1>
+            <img src="sello.png" alt="Sello">
+        </div>
     </section>
 </body>
 </html>
