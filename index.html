@@ -48,7 +48,18 @@
             position: relative;
         }
 
-        /* Bloque izquierdo: Texto (primer párrafo) con fondo violeta */
+        /* Bloque violeta con 85% de transparencia */
+        .seccion-tienda::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(80, 0, 120, 0.85); /* Fondo violeta con 85% de transparencia */
+        }
+
+        /* Bloque izquierdo: Texto (primer párrafo) */
         .bloque-izquierdo {
             width: 50%;
             text-align: center;
@@ -58,7 +69,6 @@
             color: white;
             font-size: 18px;
             line-height: 1.8;
-            background-color: rgba(80, 0, 120, 0.9); /* Fondo violeta con 90% de transparencia */
         }
 
         /* Bloque derecho: Texto y logos de redes */
@@ -139,7 +149,7 @@
 
     <!-- Sección 2: Nuestra Tienda -->
     <section class="seccion-tienda">
-        <!-- Bloque izquierdo: Primer párrafo del texto con fondo violeta -->
+        <!-- Bloque izquierdo: Primer párrafo del texto -->
         <div class="bloque-izquierdo">
             <p>
                 Somos un proyecto joven y apasionado, dedicado a lo que más nos gusta: la música. Nos mueve la búsqueda de esas gemas olvidadas para darles un nuevo hogar. Lo que más disfrutamos es compartirlas con quienes aman el formato físico, ese que se puede tocar, oler, disfrutar en cada detalle, porque creemos que es una forma única de vivir la música.
